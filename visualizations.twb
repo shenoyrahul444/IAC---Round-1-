@@ -1,0 +1,2815 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10200.17.0328.0755                               -->
+<workbook source-build='10.2.1 (10200.17.0328.0755)' source-platform='win' version='10.2' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='transformed_Training Dataset' inline='true' name='federated.1xb7j0q0if4no810413ru0iwdzuu' version='10.2'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='transformed_Training Dataset' name='textscan.0vxczbe0890pnl1g90cng1mxkgu7'>
+            <connection class='textscan' directory='C:/Users/nayan/Downloads/Studies/python/gitPython/IAC-3.0' filename='transformed_Training Dataset.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0vxczbe0890pnl1g90cng1mxkgu7' name='transformed_Training Dataset.csv' table='[transformed_Training Dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Id' ordinal='1' />
+            <column datatype='string' name='Education Level' ordinal='2' />
+            <column datatype='integer' name='Age' ordinal='3' />
+            <column datatype='string' name='Age Range' ordinal='4' />
+            <column datatype='string' name='Employment Status' ordinal='5' />
+            <column datatype='string' name='Gender' ordinal='6' />
+            <column datatype='integer' name='Children' ordinal='7' />
+            <column datatype='integer' name='Weekly Earnings' ordinal='8' />
+            <column datatype='date' date-parse-format='yyyy' name='Year' ordinal='9' />
+            <column datatype='integer' name='Weekly Hours Worked' ordinal='10' />
+            <column datatype='integer' name='Sleeping' ordinal='11' />
+            <column datatype='integer' name='Grooming' ordinal='12' />
+            <column datatype='integer' name='Housework' ordinal='13' />
+            <column datatype='integer' name='Food &amp; Drink Prep' ordinal='14' />
+            <column datatype='integer' name='Caring for Children' ordinal='15' />
+            <column datatype='integer' name='Playing with Children' ordinal='16' />
+            <column datatype='integer' name='Job Searching' ordinal='17' />
+            <column datatype='integer' name='Shopping' ordinal='18' />
+            <column datatype='integer' name='Eating and Drinking' ordinal='19' />
+            <column datatype='integer' name='Socializing &amp; Relaxing' ordinal='20' />
+            <column datatype='integer' name='Television' ordinal='21' />
+            <column datatype='integer' name='Golfing' ordinal='22' />
+            <column datatype='integer' name='Running' ordinal='23' />
+            <column datatype='integer' name='Volunteering' ordinal='24' />
+            <column datatype='real' name='Total' ordinal='25' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[transformed_Training Dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[transformed_Training Dataset.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Id]</local-name>
+            <parent-name>[transformed_Training Dataset.csv]</parent-name>
+            <remote-alias>Id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Education Level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Education Level]</local-name>
+            <parent-name>[transformed_Training Dataset.csv]</parent-name>
+            <remote-alias>Education Level</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[transformed_Training Dataset.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age Range</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Age Range]</local-name>
+            <parent-name>[transformed_Training Dataset.csv]</parent-name>
+            <remote-alias>Age Range</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Employment Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Employment Status]</local-name>
+            <parent-name>[transformed_Training Dataset.csv]</parent-name>
+            <remote-alias>Employment Status</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[transformed_Training Dataset.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Children</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Children]</local-name>
+            <parent-name>[transformed_Training Dataset.csv]</parent-name>
+            <remote-alias>Children</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weekly Earnings</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Weekly Earnings]</local-name>
+            <parent-name>[transformed_Training Dataset.csv]</parent-name>
+            <remote-alias>Weekly Earnings</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[transformed_Training Dataset.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weekly Hours Worked</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Weekly Hours Worked]</local-name>
+            <parent-name>[transformed_Training Dataset.csv]</parent-name>
+            <remote-alias>Weekly Hours Worked</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sleeping</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sleeping]</local-name>
+            <parent-name>[transformed_Training Dataset.csv]</parent-name>
+            <remote-alias>Sleeping</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Grooming</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Grooming]</local-name>
+            <parent-name>[transformed_Training Dataset.csv]</parent-name>
+            <remote-alias>Grooming</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Housework</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Housework]</local-name>
+            <parent-name>[transformed_Training Dataset.csv]</parent-name>
+            <remote-alias>Housework</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Food &amp; Drink Prep</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Food &amp; Drink Prep]</local-name>
+            <parent-name>[transformed_Training Dataset.csv]</parent-name>
+            <remote-alias>Food &amp; Drink Prep</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Caring for Children</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Caring for Children]</local-name>
+            <parent-name>[transformed_Training Dataset.csv]</parent-name>
+            <remote-alias>Caring for Children</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Playing with Children</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Playing with Children]</local-name>
+            <parent-name>[transformed_Training Dataset.csv]</parent-name>
+            <remote-alias>Playing with Children</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job Searching</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Job Searching]</local-name>
+            <parent-name>[transformed_Training Dataset.csv]</parent-name>
+            <remote-alias>Job Searching</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shopping</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Shopping]</local-name>
+            <parent-name>[transformed_Training Dataset.csv]</parent-name>
+            <remote-alias>Shopping</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Eating and Drinking</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Eating and Drinking]</local-name>
+            <parent-name>[transformed_Training Dataset.csv]</parent-name>
+            <remote-alias>Eating and Drinking</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Socializing &amp; Relaxing</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Socializing &amp; Relaxing]</local-name>
+            <parent-name>[transformed_Training Dataset.csv]</parent-name>
+            <remote-alias>Socializing &amp; Relaxing</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Television</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Television]</local-name>
+            <parent-name>[transformed_Training Dataset.csv]</parent-name>
+            <remote-alias>Television</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Golfing</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Golfing]</local-name>
+            <parent-name>[transformed_Training Dataset.csv]</parent-name>
+            <remote-alias>Golfing</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Running</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Running]</local-name>
+            <parent-name>[transformed_Training Dataset.csv]</parent-name>
+            <remote-alias>Running</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Volunteering</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Volunteering]</local-name>
+            <parent-name>[transformed_Training Dataset.csv]</parent-name>
+            <remote-alias>Volunteering</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total]</local-name>
+            <parent-name>[transformed_Training Dataset.csv]</parent-name>
+            <remote-alias>Total</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Age Range]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Caring for Children]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Children]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Eating and Drinking]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Education Level]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Education_Group]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Education Level]' new-bin='true'>
+          <bin default-name='true' value='&quot;10th grade, 11th grade, 12th grade and 2 more&quot;'>
+            <value>&quot;10th grade&quot;</value>
+            <value>&quot;11th grade&quot;</value>
+            <value>&quot;12th grade&quot;</value>
+            <value>&quot;9th grade&quot;</value>
+            <value>&quot;High School&quot;</value>
+          </bin>
+          <bin default-name='true' value='&quot;Associate Degree, Bachelor, Some College&quot;'>
+            <value>&quot;Associate Degree&quot;</value>
+            <value>&quot;Bachelor&quot;</value>
+            <value>&quot;Some College&quot;</value>
+          </bin>
+          <bin default-name='true' value='&quot;Doctoral Degree, Master, Prof. Degree&quot;'>
+            <value>&quot;Doctoral Degree&quot;</value>
+            <value>&quot;Master&quot;</value>
+            <value>&quot;Prof. Degree&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Employment Status]' role='dimension' type='nominal' />
+      <column datatype='integer' hidden='true' name='[F1]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Food &amp; Drink Prep]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Golfing]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Grooming]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Housework]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Id]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Job Searching]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Playing with Children]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Running]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Shopping]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Sleeping]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Socializing &amp; Relaxing]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Television]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Total]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Volunteering]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Weekly Earnings]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Weekly Hours Worked]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Weekly_Hours_Worked _Group]' role='dimension' type='ordinal'>
+        <calculation class='categorical-bin' column='[Weekly Hours Worked]' new-bin='true'>
+          <bin default-name='true' value='&quot;0, 1, 2 and 18 more&quot;'>
+            <value>0</value>
+            <value>1</value>
+            <value>2</value>
+            <value>3</value>
+            <value>4</value>
+            <value>5</value>
+            <value>6</value>
+            <value>7</value>
+            <value>8</value>
+            <value>9</value>
+            <value>10</value>
+            <value>11</value>
+            <value>12</value>
+            <value>13</value>
+            <value>14</value>
+            <value>15</value>
+            <value>16</value>
+            <value>17</value>
+            <value>18</value>
+            <value>19</value>
+            <value>20</value>
+          </bin>
+          <bin default-name='true' value='&quot;21, 22, 23 and 17 more&quot;'>
+            <value>21</value>
+            <value>22</value>
+            <value>23</value>
+            <value>24</value>
+            <value>25</value>
+            <value>26</value>
+            <value>27</value>
+            <value>28</value>
+            <value>29</value>
+            <value>30</value>
+            <value>31</value>
+            <value>32</value>
+            <value>33</value>
+            <value>34</value>
+            <value>35</value>
+            <value>36</value>
+            <value>37</value>
+            <value>38</value>
+            <value>39</value>
+            <value>40</value>
+          </bin>
+          <bin default-name='true' value='&quot;41, 42, 43 and 17 more&quot;'>
+            <value>41</value>
+            <value>42</value>
+            <value>43</value>
+            <value>44</value>
+            <value>45</value>
+            <value>46</value>
+            <value>47</value>
+            <value>48</value>
+            <value>49</value>
+            <value>50</value>
+            <value>51</value>
+            <value>52</value>
+            <value>53</value>
+            <value>54</value>
+            <value>55</value>
+            <value>56</value>
+            <value>57</value>
+            <value>58</value>
+            <value>59</value>
+            <value>60</value>
+          </bin>
+          <bin default-name='true' value='&quot;61, 62, 63 and 43 more&quot;'>
+            <value>61</value>
+            <value>62</value>
+            <value>63</value>
+            <value>64</value>
+            <value>65</value>
+            <value>66</value>
+            <value>67</value>
+            <value>68</value>
+            <value>69</value>
+            <value>70</value>
+            <value>71</value>
+            <value>72</value>
+            <value>73</value>
+            <value>74</value>
+            <value>75</value>
+            <value>76</value>
+            <value>77</value>
+            <value>78</value>
+            <value>79</value>
+            <value>80</value>
+            <value>81</value>
+            <value>82</value>
+            <value>83</value>
+            <value>84</value>
+            <value>85</value>
+            <value>86</value>
+            <value>87</value>
+            <value>88</value>
+            <value>90</value>
+            <value>91</value>
+            <value>92</value>
+            <value>94</value>
+            <value>95</value>
+            <value>96</value>
+            <value>97</value>
+            <value>98</value>
+            <value>99</value>
+            <value>100</value>
+            <value>102</value>
+            <value>103</value>
+            <value>109</value>
+            <value>110</value>
+            <value>115</value>
+            <value>119</value>
+            <value>120</value>
+            <value>160</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Working_Group]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Age Range]' new-bin='true'>
+          <bin default-name='true' value='&quot;0-19&quot;'>
+            <value>&quot;0-19&quot;</value>
+          </bin>
+          <bin default-name='true' value='&quot;20-29, 30-39, 40-49 and 1 more&quot;'>
+            <value>&quot;20-29&quot;</value>
+            <value>&quot;30-39&quot;</value>
+            <value>&quot;40-49&quot;</value>
+            <value>&quot;50-59&quot;</value>
+          </bin>
+          <bin default-name='true' value='&quot;60-69, 70-79, 80+&quot;'>
+            <value>&quot;60-69&quot;</value>
+            <value>&quot;70-79&quot;</value>
+            <value>&quot;80+&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='date' name='[Year]' role='dimension' type='quantitative' />
+      <column-instance column='[Age]' derivation='Avg' name='[avg:Age:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Caring for Children]' derivation='Avg' name='[avg:Caring for Children:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Children]' derivation='Avg' name='[avg:Children:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Eating and Drinking]' derivation='Avg' name='[avg:Eating and Drinking:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Food &amp; Drink Prep]' derivation='Avg' name='[avg:Food &amp; Drink Prep:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Golfing]' derivation='Avg' name='[avg:Golfing:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Grooming]' derivation='Avg' name='[avg:Grooming:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Housework]' derivation='Avg' name='[avg:Housework:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Job Searching]' derivation='Avg' name='[avg:Job Searching:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Records]' derivation='Avg' name='[avg:Number of Records:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Playing with Children]' derivation='Avg' name='[avg:Playing with Children:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Running]' derivation='Avg' name='[avg:Running:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Shopping]' derivation='Avg' name='[avg:Shopping:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sleeping]' derivation='Avg' name='[avg:Sleeping:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Socializing &amp; Relaxing]' derivation='Avg' name='[avg:Socializing &amp; Relaxing:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Television]' derivation='Avg' name='[avg:Television:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total]' derivation='Avg' name='[avg:Total:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Volunteering]' derivation='Avg' name='[avg:Volunteering:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Weekly Earnings]' derivation='Avg' name='[avg:Weekly Earnings:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Weekly Hours Worked]' derivation='Avg' name='[avg:Weekly Hours Worked:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Employment Status]' derivation='None' name='[none:Employment Status:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Age]' derivation='Sum' name='[sum:Age:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Caring for Children]' derivation='Sum' name='[sum:Caring for Children:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Children]' derivation='Sum' name='[sum:Children:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Eating and Drinking]' derivation='Sum' name='[sum:Eating and Drinking:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Food &amp; Drink Prep]' derivation='Sum' name='[sum:Food &amp; Drink Prep:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Golfing]' derivation='Sum' name='[sum:Golfing:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Grooming]' derivation='Sum' name='[sum:Grooming:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Housework]' derivation='Sum' name='[sum:Housework:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Job Searching]' derivation='Sum' name='[sum:Job Searching:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Playing with Children]' derivation='Sum' name='[sum:Playing with Children:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Running]' derivation='Sum' name='[sum:Running:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Shopping]' derivation='Sum' name='[sum:Shopping:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sleeping]' derivation='Sum' name='[sum:Sleeping:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Socializing &amp; Relaxing]' derivation='Sum' name='[sum:Socializing &amp; Relaxing:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Television]' derivation='Sum' name='[sum:Television:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total]' derivation='Sum' name='[sum:Total:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Volunteering]' derivation='Sum' name='[sum:Volunteering:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Weekly Earnings]' derivation='Sum' name='[sum:Weekly Earnings:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Weekly Hours Worked]' derivation='Sum' name='[sum:Weekly Hours Worked:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.262162' measure-ordering='alphabetic' measure-percentage='0.737838' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[Weekly_Hours_Worked _Group]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;21, 22, 23 and 17 more&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;61, 62, 63 and 43 more&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;41, 42, 43 and 17 more&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;0, 1, 2 and 18 more&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Employment Status:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Employed&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Unemployed&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Not in labor force&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Education_Group]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;10th grade, 11th grade, 12th grade and 2 more&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Doctoral Degree, Master, Prof. Degree&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Associate Degree, Bachelor, Some College&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Job Searching:qk]&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Job Searching:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Age:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Age:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Food &amp; Drink Prep:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Food &amp; Drink Prep:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Caring for Children:qk]:1&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Shopping:qk]&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Shopping:qk]&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Golfing:qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Golfing:qk]&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Weekly Earnings:qk]&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Weekly Earnings:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Caring for Children:qk]&quot;</bucket>
+            </map>
+            <map to='#ae123a'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Caring for Children:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Total:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Total:qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Grooming:qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Grooming:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Sleeping:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Sleeping:qk]&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Socializing &amp; Relaxing:qk]&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Socializing &amp; Relaxing:qk]&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Volunteering:qk]&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Volunteering:qk]&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Weekly Hours Worked:qk]&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Weekly Hours Worked:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Playing with Children:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Playing with Children:qk]&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Housework:qk]&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Housework:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Children:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Children:qk]&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Television:qk]&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Television:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Running:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Running:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Eating and Drinking:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Eating and Drinking:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='transformed_Training Dataset' name='federated.1xb7j0q0if4no810413ru0iwdzuu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xb7j0q0if4no810413ru0iwdzuu'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Caring for Children]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Children]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Eating and Drinking]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Food &amp; Drink Prep]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Golfing]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Grooming]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Housework]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Job Searching]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='integer' name='[Playing with Children]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Running]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Shopping]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Sleeping]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Socializing &amp; Relaxing]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Television]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Total]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Volunteering]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Weekly Earnings]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Weekly Hours Worked]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Age]' derivation='Avg' name='[avg:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Caring for Children]' derivation='Avg' name='[avg:Caring for Children:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Children]' derivation='Avg' name='[avg:Children:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Eating and Drinking]' derivation='Avg' name='[avg:Eating and Drinking:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Food &amp; Drink Prep]' derivation='Avg' name='[avg:Food &amp; Drink Prep:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Golfing]' derivation='Avg' name='[avg:Golfing:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Grooming]' derivation='Avg' name='[avg:Grooming:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Housework]' derivation='Avg' name='[avg:Housework:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Job Searching]' derivation='Avg' name='[avg:Job Searching:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Records]' derivation='Avg' name='[avg:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Playing with Children]' derivation='Avg' name='[avg:Playing with Children:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Running]' derivation='Avg' name='[avg:Running:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Shopping]' derivation='Avg' name='[avg:Shopping:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sleeping]' derivation='Avg' name='[avg:Sleeping:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Socializing &amp; Relaxing]' derivation='Avg' name='[avg:Socializing &amp; Relaxing:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Television]' derivation='Avg' name='[avg:Television:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total]' derivation='Avg' name='[avg:Total:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Volunteering]' derivation='Avg' name='[avg:Volunteering:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weekly Earnings]' derivation='Avg' name='[avg:Weekly Earnings:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weekly Hours Worked]' derivation='Avg' name='[avg:Weekly Hours Worked:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age]' derivation='Sum' name='[sum:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Caring for Children]' derivation='Sum' name='[sum:Caring for Children:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Children]' derivation='Sum' name='[sum:Children:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Eating and Drinking]' derivation='Sum' name='[sum:Eating and Drinking:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Food &amp; Drink Prep]' derivation='Sum' name='[sum:Food &amp; Drink Prep:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Golfing]' derivation='Sum' name='[sum:Golfing:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Grooming]' derivation='Sum' name='[sum:Grooming:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Housework]' derivation='Sum' name='[sum:Housework:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Job Searching]' derivation='Sum' name='[sum:Job Searching:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Playing with Children]' derivation='Sum' name='[sum:Playing with Children:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Running]' derivation='Sum' name='[sum:Running:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Shopping]' derivation='Sum' name='[sum:Shopping:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sleeping]' derivation='Sum' name='[sum:Sleeping:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Socializing &amp; Relaxing]' derivation='Sum' name='[sum:Socializing &amp; Relaxing:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Television]' derivation='Sum' name='[sum:Television:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total]' derivation='Sum' name='[sum:Total:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Volunteering]' derivation='Sum' name='[sum:Volunteering:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weekly Earnings]' derivation='Sum' name='[sum:Weekly Earnings:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weekly Hours Worked]' derivation='Sum' name='[sum:Weekly Hours Worked:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='Year' name='[yr:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xb7j0q0if4no810413ru0iwdzuu].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Sleeping:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Weekly Earnings:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Television:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Socializing &amp; Relaxing:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Eating and Drinking:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Age:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Housework:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Grooming:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Food &amp; Drink Prep:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Weekly Hours Worked:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Shopping:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Caring for Children:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Volunteering:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Playing with Children:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Job Searching:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Golfing:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Number of Records:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Children:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Running:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <sort class='manual' column='[federated.1xb7j0q0if4no810413ru0iwdzuu].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Sleeping:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Weekly Earnings:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Television:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Socializing &amp; Relaxing:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Eating and Drinking:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Age:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Housework:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Grooming:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Food &amp; Drink Prep:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Weekly Hours Worked:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Shopping:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Caring for Children:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Total:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Volunteering:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Playing with Children:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Job Searching:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Golfing:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Number of Records:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Children:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Running:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Sleeping:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Weekly Earnings:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Television:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Socializing &amp; Relaxing:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Eating and Drinking:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Age:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Housework:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Grooming:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Food &amp; Drink Prep:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Weekly Hours Worked:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Shopping:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Caring for Children:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Total:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Volunteering:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Playing with Children:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Job Searching:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Golfing:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Number of Records:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Children:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Running:qk]&quot;</bucket>
+            </dictionary>
+          </sort>
+          <filter class='categorical' column='[federated.1xb7j0q0if4no810413ru0iwdzuu].[yr:Year:ok]'>
+            <groupfilter function='member' level='[yr:Year:ok]' member='2012' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1xb7j0q0if4no810413ru0iwdzuu].[yr:Year:ok]</column>
+            <column>[federated.1xb7j0q0if4no810413ru0iwdzuu].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='off' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='9' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#72b966' />
+                <format attr='size' value='0.86756908893585205' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1xb7j0q0if4no810413ru0iwdzuu].[Multiple Values]</rows>
+        <cols>[federated.1xb7j0q0if4no810413ru0iwdzuu].[:Measure Names]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>spending time based on working status</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='transformed_Training Dataset' name='federated.1xb7j0q0if4no810413ru0iwdzuu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xb7j0q0if4no810413ru0iwdzuu'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Caring for Children]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Children]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Eating and Drinking]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Employment Status]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Food &amp; Drink Prep]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Golfing]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Grooming]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Housework]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Job Searching]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='integer' name='[Playing with Children]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Running]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Shopping]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Sleeping]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Socializing &amp; Relaxing]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Television]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Total]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Volunteering]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Weekly Earnings]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Weekly Hours Worked]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Age]' derivation='Avg' name='[avg:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Caring for Children]' derivation='Avg' name='[avg:Caring for Children:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Children]' derivation='Avg' name='[avg:Children:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Eating and Drinking]' derivation='Avg' name='[avg:Eating and Drinking:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Food &amp; Drink Prep]' derivation='Avg' name='[avg:Food &amp; Drink Prep:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Golfing]' derivation='Avg' name='[avg:Golfing:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Grooming]' derivation='Avg' name='[avg:Grooming:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Housework]' derivation='Avg' name='[avg:Housework:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Job Searching]' derivation='Avg' name='[avg:Job Searching:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Records]' derivation='Avg' name='[avg:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Playing with Children]' derivation='Avg' name='[avg:Playing with Children:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Running]' derivation='Avg' name='[avg:Running:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Shopping]' derivation='Avg' name='[avg:Shopping:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sleeping]' derivation='Avg' name='[avg:Sleeping:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Socializing &amp; Relaxing]' derivation='Avg' name='[avg:Socializing &amp; Relaxing:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Television]' derivation='Avg' name='[avg:Television:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total]' derivation='Avg' name='[avg:Total:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Volunteering]' derivation='Avg' name='[avg:Volunteering:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weekly Earnings]' derivation='Avg' name='[avg:Weekly Earnings:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weekly Hours Worked]' derivation='Avg' name='[avg:Weekly Hours Worked:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Employment Status]' derivation='None' name='[none:Employment Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Age]' derivation='Sum' name='[sum:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Caring for Children]' derivation='Sum' name='[sum:Caring for Children:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Children]' derivation='Sum' name='[sum:Children:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Eating and Drinking]' derivation='Sum' name='[sum:Eating and Drinking:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Food &amp; Drink Prep]' derivation='Sum' name='[sum:Food &amp; Drink Prep:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Golfing]' derivation='Sum' name='[sum:Golfing:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Grooming]' derivation='Sum' name='[sum:Grooming:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Housework]' derivation='Sum' name='[sum:Housework:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Job Searching]' derivation='Sum' name='[sum:Job Searching:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Playing with Children]' derivation='Sum' name='[sum:Playing with Children:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Running]' derivation='Sum' name='[sum:Running:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Shopping]' derivation='Sum' name='[sum:Shopping:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sleeping]' derivation='Sum' name='[sum:Sleeping:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Socializing &amp; Relaxing]' derivation='Sum' name='[sum:Socializing &amp; Relaxing:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Television]' derivation='Sum' name='[sum:Television:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total]' derivation='Sum' name='[sum:Total:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Volunteering]' derivation='Sum' name='[sum:Volunteering:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weekly Earnings]' derivation='Sum' name='[sum:Weekly Earnings:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weekly Hours Worked]' derivation='Sum' name='[sum:Weekly Hours Worked:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='Year' name='[yr:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xb7j0q0if4no810413ru0iwdzuu].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Sleeping:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Television:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Socializing &amp; Relaxing:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Eating and Drinking:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Housework:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Grooming:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Food &amp; Drink Prep:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Shopping:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Caring for Children:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Job Searching:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Volunteering:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Playing with Children:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Golfing:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Children:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Running:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <sort class='manual' column='[federated.1xb7j0q0if4no810413ru0iwdzuu].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Sleeping:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Weekly Earnings:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Television:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Socializing &amp; Relaxing:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Eating and Drinking:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Age:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Housework:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Grooming:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Food &amp; Drink Prep:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Shopping:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Total:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Caring for Children:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Weekly Hours Worked:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Job Searching:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Volunteering:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Playing with Children:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Golfing:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Number of Records:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Children:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Running:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Sleeping:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Weekly Earnings:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Television:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Socializing &amp; Relaxing:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Eating and Drinking:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Age:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Housework:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Grooming:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Food &amp; Drink Prep:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Weekly Hours Worked:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Shopping:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Caring for Children:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Total:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Volunteering:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Playing with Children:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Job Searching:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Golfing:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Number of Records:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Children:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Running:qk]&quot;</bucket>
+            </dictionary>
+          </sort>
+          <sort class='manual' column='[federated.1xb7j0q0if4no810413ru0iwdzuu].[none:Employment Status:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Unemployed&quot;</bucket>
+              <bucket>&quot;Employed&quot;</bucket>
+              <bucket>&quot;Not in labor force&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </sort>
+          <filter class='categorical' column='[federated.1xb7j0q0if4no810413ru0iwdzuu].[yr:Year:ok]'>
+            <groupfilter function='member' level='[yr:Year:ok]' member='2012' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1xb7j0q0if4no810413ru0iwdzuu].[yr:Year:ok]</column>
+            <column>[federated.1xb7j0q0if4no810413ru0iwdzuu].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1xb7j0q0if4no810413ru0iwdzuu].[Multiple Values]' field-type='quantitative' minor-origin='0.0' minor-spacing='10.0' range-type='uniform' scope='rows' type='space' />
+            <format attr='subtitle' class='0' field='[federated.1xb7j0q0if4no810413ru0iwdzuu].[Multiple Values]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.1xb7j0q0if4no810413ru0iwdzuu].[Multiple Values]' scope='rows' value='true' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='off' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1xb7j0q0if4no810413ru0iwdzuu].[none:Employment Status:nk]' />
+              <size column='[federated.1xb7j0q0if4no810413ru0iwdzuu].[none:Employment Status:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#a0cbe8' />
+                <format attr='size' value='1.4172928333282471' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1xb7j0q0if4no810413ru0iwdzuu].[Multiple Values]</rows>
+        <cols>[federated.1xb7j0q0if4no810413ru0iwdzuu].[:Measure Names]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>spending time based on age group 0-19, 20-59, 60+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='transformed_Training Dataset' name='federated.1xb7j0q0if4no810413ru0iwdzuu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xb7j0q0if4no810413ru0iwdzuu'>
+            <column datatype='string' name='[Age Range]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Caring for Children]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Children]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Eating and Drinking]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Food &amp; Drink Prep]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Golfing]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Grooming]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Housework]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Job Searching]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='integer' name='[Playing with Children]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Running]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Shopping]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Sleeping]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Socializing &amp; Relaxing]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Television]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Total]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Volunteering]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Weekly Earnings]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Weekly Hours Worked]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Working_Group]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Age Range]' new-bin='true'>
+                <bin default-name='true' value='&quot;0-19&quot;'>
+                  <value>&quot;0-19&quot;</value>
+                </bin>
+                <bin default-name='true' value='&quot;20-29, 30-39, 40-49 and 1 more&quot;'>
+                  <value>&quot;20-29&quot;</value>
+                  <value>&quot;30-39&quot;</value>
+                  <value>&quot;40-49&quot;</value>
+                  <value>&quot;50-59&quot;</value>
+                </bin>
+                <bin default-name='true' value='&quot;60-69, 70-79, 80+&quot;'>
+                  <value>&quot;60-69&quot;</value>
+                  <value>&quot;70-79&quot;</value>
+                  <value>&quot;80+&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='date' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Age]' derivation='Avg' name='[avg:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Caring for Children]' derivation='Avg' name='[avg:Caring for Children:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Children]' derivation='Avg' name='[avg:Children:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Eating and Drinking]' derivation='Avg' name='[avg:Eating and Drinking:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Food &amp; Drink Prep]' derivation='Avg' name='[avg:Food &amp; Drink Prep:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Golfing]' derivation='Avg' name='[avg:Golfing:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Grooming]' derivation='Avg' name='[avg:Grooming:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Housework]' derivation='Avg' name='[avg:Housework:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Job Searching]' derivation='Avg' name='[avg:Job Searching:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Records]' derivation='Avg' name='[avg:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Playing with Children]' derivation='Avg' name='[avg:Playing with Children:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Running]' derivation='Avg' name='[avg:Running:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Shopping]' derivation='Avg' name='[avg:Shopping:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sleeping]' derivation='Avg' name='[avg:Sleeping:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Socializing &amp; Relaxing]' derivation='Avg' name='[avg:Socializing &amp; Relaxing:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Television]' derivation='Avg' name='[avg:Television:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total]' derivation='Avg' name='[avg:Total:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Volunteering]' derivation='Avg' name='[avg:Volunteering:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weekly Earnings]' derivation='Avg' name='[avg:Weekly Earnings:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weekly Hours Worked]' derivation='Avg' name='[avg:Weekly Hours Worked:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age]' derivation='Sum' name='[sum:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Caring for Children]' derivation='Sum' name='[sum:Caring for Children:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Children]' derivation='Sum' name='[sum:Children:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Eating and Drinking]' derivation='Sum' name='[sum:Eating and Drinking:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Food &amp; Drink Prep]' derivation='Sum' name='[sum:Food &amp; Drink Prep:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Golfing]' derivation='Sum' name='[sum:Golfing:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Grooming]' derivation='Sum' name='[sum:Grooming:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Housework]' derivation='Sum' name='[sum:Housework:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Job Searching]' derivation='Sum' name='[sum:Job Searching:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Playing with Children]' derivation='Sum' name='[sum:Playing with Children:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Running]' derivation='Sum' name='[sum:Running:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Shopping]' derivation='Sum' name='[sum:Shopping:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sleeping]' derivation='Sum' name='[sum:Sleeping:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Socializing &amp; Relaxing]' derivation='Sum' name='[sum:Socializing &amp; Relaxing:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Television]' derivation='Sum' name='[sum:Television:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total]' derivation='Sum' name='[sum:Total:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Volunteering]' derivation='Sum' name='[sum:Volunteering:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weekly Earnings]' derivation='Sum' name='[sum:Weekly Earnings:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weekly Hours Worked]' derivation='Sum' name='[sum:Weekly Hours Worked:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='Year' name='[yr:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xb7j0q0if4no810413ru0iwdzuu].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Sleeping:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Television:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Socializing &amp; Relaxing:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Eating and Drinking:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Housework:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Grooming:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Food &amp; Drink Prep:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Shopping:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Caring for Children:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Job Searching:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Volunteering:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Playing with Children:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Golfing:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Children:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Running:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <sort class='manual' column='[federated.1xb7j0q0if4no810413ru0iwdzuu].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Sleeping:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Weekly Earnings:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Television:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Socializing &amp; Relaxing:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Eating and Drinking:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Age:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Housework:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Grooming:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Food &amp; Drink Prep:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Shopping:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Total:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Caring for Children:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Weekly Hours Worked:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Job Searching:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Volunteering:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Playing with Children:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Golfing:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Number of Records:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Children:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Running:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Sleeping:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Weekly Earnings:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Television:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Socializing &amp; Relaxing:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Eating and Drinking:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Age:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Housework:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Grooming:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Food &amp; Drink Prep:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Weekly Hours Worked:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Shopping:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Caring for Children:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Total:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Volunteering:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Playing with Children:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Job Searching:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Golfing:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Number of Records:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Children:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Running:qk]&quot;</bucket>
+            </dictionary>
+          </sort>
+          <filter class='categorical' column='[federated.1xb7j0q0if4no810413ru0iwdzuu].[yr:Year:ok]'>
+            <groupfilter function='member' level='[yr:Year:ok]' member='2012' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1xb7j0q0if4no810413ru0iwdzuu].[yr:Year:ok]</column>
+            <column>[federated.1xb7j0q0if4no810413ru0iwdzuu].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='off' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1xb7j0q0if4no810413ru0iwdzuu].[Working_Group]' />
+              <size column='[federated.1xb7j0q0if4no810413ru0iwdzuu].[Working_Group]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#a0cbe8' />
+                <format attr='size' value='1.4172928333282471' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1xb7j0q0if4no810413ru0iwdzuu].[Multiple Values]</rows>
+        <cols>[federated.1xb7j0q0if4no810413ru0iwdzuu].[:Measure Names]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>spending time based on education group</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='transformed_Training Dataset' name='federated.1xb7j0q0if4no810413ru0iwdzuu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xb7j0q0if4no810413ru0iwdzuu'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Caring for Children]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Children]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Eating and Drinking]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Education Level]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Education_Group]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Education Level]' new-bin='true'>
+                <bin default-name='true' value='&quot;10th grade, 11th grade, 12th grade and 2 more&quot;'>
+                  <value>&quot;10th grade&quot;</value>
+                  <value>&quot;11th grade&quot;</value>
+                  <value>&quot;12th grade&quot;</value>
+                  <value>&quot;9th grade&quot;</value>
+                  <value>&quot;High School&quot;</value>
+                </bin>
+                <bin default-name='true' value='&quot;Associate Degree, Bachelor, Some College&quot;'>
+                  <value>&quot;Associate Degree&quot;</value>
+                  <value>&quot;Bachelor&quot;</value>
+                  <value>&quot;Some College&quot;</value>
+                </bin>
+                <bin default-name='true' value='&quot;Doctoral Degree, Master, Prof. Degree&quot;'>
+                  <value>&quot;Doctoral Degree&quot;</value>
+                  <value>&quot;Master&quot;</value>
+                  <value>&quot;Prof. Degree&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='integer' name='[Food &amp; Drink Prep]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Golfing]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Grooming]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Housework]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Job Searching]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='integer' name='[Playing with Children]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Running]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Shopping]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Sleeping]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Socializing &amp; Relaxing]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Television]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Total]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Volunteering]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Weekly Earnings]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Weekly Hours Worked]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Age]' derivation='Avg' name='[avg:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Caring for Children]' derivation='Avg' name='[avg:Caring for Children:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Children]' derivation='Avg' name='[avg:Children:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Eating and Drinking]' derivation='Avg' name='[avg:Eating and Drinking:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Food &amp; Drink Prep]' derivation='Avg' name='[avg:Food &amp; Drink Prep:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Golfing]' derivation='Avg' name='[avg:Golfing:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Grooming]' derivation='Avg' name='[avg:Grooming:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Housework]' derivation='Avg' name='[avg:Housework:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Job Searching]' derivation='Avg' name='[avg:Job Searching:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Records]' derivation='Avg' name='[avg:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Playing with Children]' derivation='Avg' name='[avg:Playing with Children:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Running]' derivation='Avg' name='[avg:Running:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Shopping]' derivation='Avg' name='[avg:Shopping:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sleeping]' derivation='Avg' name='[avg:Sleeping:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Socializing &amp; Relaxing]' derivation='Avg' name='[avg:Socializing &amp; Relaxing:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Television]' derivation='Avg' name='[avg:Television:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total]' derivation='Avg' name='[avg:Total:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Volunteering]' derivation='Avg' name='[avg:Volunteering:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weekly Earnings]' derivation='Avg' name='[avg:Weekly Earnings:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weekly Hours Worked]' derivation='Avg' name='[avg:Weekly Hours Worked:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age]' derivation='Sum' name='[sum:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Caring for Children]' derivation='Sum' name='[sum:Caring for Children:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Children]' derivation='Sum' name='[sum:Children:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Eating and Drinking]' derivation='Sum' name='[sum:Eating and Drinking:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Food &amp; Drink Prep]' derivation='Sum' name='[sum:Food &amp; Drink Prep:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Golfing]' derivation='Sum' name='[sum:Golfing:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Grooming]' derivation='Sum' name='[sum:Grooming:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Housework]' derivation='Sum' name='[sum:Housework:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Job Searching]' derivation='Sum' name='[sum:Job Searching:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Playing with Children]' derivation='Sum' name='[sum:Playing with Children:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Running]' derivation='Sum' name='[sum:Running:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Shopping]' derivation='Sum' name='[sum:Shopping:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sleeping]' derivation='Sum' name='[sum:Sleeping:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Socializing &amp; Relaxing]' derivation='Sum' name='[sum:Socializing &amp; Relaxing:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Television]' derivation='Sum' name='[sum:Television:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total]' derivation='Sum' name='[sum:Total:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Volunteering]' derivation='Sum' name='[sum:Volunteering:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weekly Earnings]' derivation='Sum' name='[sum:Weekly Earnings:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weekly Hours Worked]' derivation='Sum' name='[sum:Weekly Hours Worked:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='Year' name='[yr:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xb7j0q0if4no810413ru0iwdzuu].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Caring for Children:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Children:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Eating and Drinking:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Food &amp; Drink Prep:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Golfing:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Grooming:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Housework:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Job Searching:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Playing with Children:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Running:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Shopping:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Sleeping:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Socializing &amp; Relaxing:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Television:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Volunteering:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <sort class='manual' column='[federated.1xb7j0q0if4no810413ru0iwdzuu].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Sleeping:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Weekly Earnings:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Television:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Socializing &amp; Relaxing:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Eating and Drinking:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Age:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Housework:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Grooming:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Food &amp; Drink Prep:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Shopping:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Total:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Caring for Children:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Weekly Hours Worked:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Job Searching:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Volunteering:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Playing with Children:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Golfing:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Number of Records:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Children:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Running:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Sleeping:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Weekly Earnings:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Television:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Socializing &amp; Relaxing:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Eating and Drinking:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Age:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Housework:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Grooming:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Food &amp; Drink Prep:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Weekly Hours Worked:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Shopping:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Caring for Children:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Total:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Volunteering:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Playing with Children:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Job Searching:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Golfing:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Number of Records:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Children:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1xb7j0q0if4no810413ru0iwdzuu].[sum:Running:qk]&quot;</bucket>
+            </dictionary>
+          </sort>
+          <sort class='manual' column='[federated.1xb7j0q0if4no810413ru0iwdzuu].[Education_Group]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;10th grade, 11th grade, 12th grade and 2 more&quot;</bucket>
+              <bucket>&quot;Associate Degree, Bachelor, Some College&quot;</bucket>
+              <bucket>&quot;Doctoral Degree, Master, Prof. Degree&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </sort>
+          <filter class='categorical' column='[federated.1xb7j0q0if4no810413ru0iwdzuu].[yr:Year:ok]'>
+            <groupfilter function='member' level='[yr:Year:ok]' member='2012' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1xb7j0q0if4no810413ru0iwdzuu].[yr:Year:ok]</column>
+            <column>[federated.1xb7j0q0if4no810413ru0iwdzuu].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1xb7j0q0if4no810413ru0iwdzuu].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1xb7j0q0if4no810413ru0iwdzuu].[Multiple Values]</rows>
+        <cols>([federated.1xb7j0q0if4no810413ru0iwdzuu].[Education_Group] / [federated.1xb7j0q0if4no810413ru0iwdzuu].[:Measure Names])</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>time spend on baby care based on education, working hours</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='transformed_Training Dataset' name='federated.1xb7j0q0if4no810413ru0iwdzuu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xb7j0q0if4no810413ru0iwdzuu'>
+            <column datatype='integer' name='[Caring for Children]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Education Level]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Education_Group]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Education Level]' new-bin='true'>
+                <bin default-name='true' value='&quot;10th grade, 11th grade, 12th grade and 2 more&quot;'>
+                  <value>&quot;10th grade&quot;</value>
+                  <value>&quot;11th grade&quot;</value>
+                  <value>&quot;12th grade&quot;</value>
+                  <value>&quot;9th grade&quot;</value>
+                  <value>&quot;High School&quot;</value>
+                </bin>
+                <bin default-name='true' value='&quot;Associate Degree, Bachelor, Some College&quot;'>
+                  <value>&quot;Associate Degree&quot;</value>
+                  <value>&quot;Bachelor&quot;</value>
+                  <value>&quot;Some College&quot;</value>
+                </bin>
+                <bin default-name='true' value='&quot;Doctoral Degree, Master, Prof. Degree&quot;'>
+                  <value>&quot;Doctoral Degree&quot;</value>
+                  <value>&quot;Master&quot;</value>
+                  <value>&quot;Prof. Degree&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='integer' name='[Weekly Hours Worked]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Weekly_Hours_Worked _Group]' role='dimension' type='ordinal'>
+              <calculation class='categorical-bin' column='[Weekly Hours Worked]' new-bin='true'>
+                <bin default-name='true' value='&quot;0, 1, 2 and 18 more&quot;'>
+                  <value>0</value>
+                  <value>1</value>
+                  <value>2</value>
+                  <value>3</value>
+                  <value>4</value>
+                  <value>5</value>
+                  <value>6</value>
+                  <value>7</value>
+                  <value>8</value>
+                  <value>9</value>
+                  <value>10</value>
+                  <value>11</value>
+                  <value>12</value>
+                  <value>13</value>
+                  <value>14</value>
+                  <value>15</value>
+                  <value>16</value>
+                  <value>17</value>
+                  <value>18</value>
+                  <value>19</value>
+                  <value>20</value>
+                </bin>
+                <bin default-name='true' value='&quot;21, 22, 23 and 17 more&quot;'>
+                  <value>21</value>
+                  <value>22</value>
+                  <value>23</value>
+                  <value>24</value>
+                  <value>25</value>
+                  <value>26</value>
+                  <value>27</value>
+                  <value>28</value>
+                  <value>29</value>
+                  <value>30</value>
+                  <value>31</value>
+                  <value>32</value>
+                  <value>33</value>
+                  <value>34</value>
+                  <value>35</value>
+                  <value>36</value>
+                  <value>37</value>
+                  <value>38</value>
+                  <value>39</value>
+                  <value>40</value>
+                </bin>
+                <bin default-name='true' value='&quot;41, 42, 43 and 17 more&quot;'>
+                  <value>41</value>
+                  <value>42</value>
+                  <value>43</value>
+                  <value>44</value>
+                  <value>45</value>
+                  <value>46</value>
+                  <value>47</value>
+                  <value>48</value>
+                  <value>49</value>
+                  <value>50</value>
+                  <value>51</value>
+                  <value>52</value>
+                  <value>53</value>
+                  <value>54</value>
+                  <value>55</value>
+                  <value>56</value>
+                  <value>57</value>
+                  <value>58</value>
+                  <value>59</value>
+                  <value>60</value>
+                </bin>
+                <bin default-name='true' value='&quot;61, 62, 63 and 43 more&quot;'>
+                  <value>61</value>
+                  <value>62</value>
+                  <value>63</value>
+                  <value>64</value>
+                  <value>65</value>
+                  <value>66</value>
+                  <value>67</value>
+                  <value>68</value>
+                  <value>69</value>
+                  <value>70</value>
+                  <value>71</value>
+                  <value>72</value>
+                  <value>73</value>
+                  <value>74</value>
+                  <value>75</value>
+                  <value>76</value>
+                  <value>77</value>
+                  <value>78</value>
+                  <value>79</value>
+                  <value>80</value>
+                  <value>81</value>
+                  <value>82</value>
+                  <value>83</value>
+                  <value>84</value>
+                  <value>85</value>
+                  <value>86</value>
+                  <value>87</value>
+                  <value>88</value>
+                  <value>90</value>
+                  <value>91</value>
+                  <value>92</value>
+                  <value>94</value>
+                  <value>95</value>
+                  <value>96</value>
+                  <value>97</value>
+                  <value>98</value>
+                  <value>99</value>
+                  <value>100</value>
+                  <value>102</value>
+                  <value>103</value>
+                  <value>109</value>
+                  <value>110</value>
+                  <value>115</value>
+                  <value>119</value>
+                  <value>120</value>
+                  <value>160</value>
+                </bin>
+              </calculation>
+            </column>
+            <column-instance column='[Caring for Children]' derivation='Avg' name='[avg:Caring for Children:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xb7j0q0if4no810413ru0iwdzuu].[Education_Group]'>
+            <groupfilter function='level-members' level='[Education_Group]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <sort class='manual' column='[federated.1xb7j0q0if4no810413ru0iwdzuu].[Weekly_Hours_Worked _Group]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;21, 22, 23 and 17 more&quot;</bucket>
+              <bucket>&quot;41, 42, 43 and 17 more&quot;</bucket>
+              <bucket>&quot;0, 1, 2 and 18 more&quot;</bucket>
+              <bucket>&quot;61, 62, 63 and 43 more&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </sort>
+          <slices>
+            <column>[federated.1xb7j0q0if4no810413ru0iwdzuu].[Education_Group]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Caring for Children:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Caring for Children:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='off' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1xb7j0q0if4no810413ru0iwdzuu].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='size' value='1.2083977460861206' />
+                <format attr='mark-transparency' value='211' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' y-axis-name='[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Caring for Children:qk]'>
+            <view>
+              <breakdown value='off' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1xb7j0q0if4no810413ru0iwdzuu].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='size' value='1.2083977460861206' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-transparency' value='211' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' y-axis-name='[federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Caring for Children:qk]' y-index='1'>
+            <view>
+              <breakdown value='off' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1xb7j0q0if4no810413ru0iwdzuu].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='size' value='1.2083977460861206' />
+                <format attr='mark-transparency' value='103' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Caring for Children:qk] + [federated.1xb7j0q0if4no810413ru0iwdzuu].[avg:Caring for Children:qk])</rows>
+        <cols>([federated.1xb7j0q0if4no810413ru0iwdzuu].[Weekly_Hours_Worked _Group] / [federated.1xb7j0q0if4no810413ru0iwdzuu].[Education_Group])</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1xb7j0q0if4no810413ru0iwdzuu].[:Measure Names]</field>
+            <field>[federated.1xb7j0q0if4no810413ru0iwdzuu].[none:Employment Status:nk]</field>
+            <field>[federated.1xb7j0q0if4no810413ru0iwdzuu].[yr:Year:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1xb7j0q0if4no810413ru0iwdzuu].[none:Employment Status:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.1xb7j0q0if4no810413ru0iwdzuu].[none:Employment Status:nk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1xb7j0q0if4no810413ru0iwdzuu].[none:Employment Status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1xb7j0q0if4no810413ru0iwdzuu].[Working_Group]' type='color' />
+            <card pane-specification-id='0' param='[federated.1xb7j0q0if4no810413ru0iwdzuu].[Working_Group]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1xb7j0q0if4no810413ru0iwdzuu].[Working_Group]</field>
+            <field>[federated.1xb7j0q0if4no810413ru0iwdzuu].[none:Age Range:nk]</field>
+            <field>[federated.1xb7j0q0if4no810413ru0iwdzuu].[none:Employment Status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1xb7j0q0if4no810413ru0iwdzuu].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1xb7j0q0if4no810413ru0iwdzuu].[:Measure Names]</field>
+            <field>[federated.1xb7j0q0if4no810413ru0iwdzuu].[Working_Group]</field>
+            <field>[federated.1xb7j0q0if4no810413ru0iwdzuu].[none:Age Range:nk]</field>
+            <field>[federated.1xb7j0q0if4no810413ru0iwdzuu].[none:Education Level:nk]</field>
+            <field>[federated.1xb7j0q0if4no810413ru0iwdzuu].[none:Employment Status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1xb7j0q0if4no810413ru0iwdzuu].[Education_Group]' type='filter' />
+            <card pane-specification-id='1' param='[federated.1xb7j0q0if4no810413ru0iwdzuu].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1xb7j0q0if4no810413ru0iwdzuu].[:Measure Names]</field>
+            <field>[federated.1xb7j0q0if4no810413ru0iwdzuu].[Education_Group]</field>
+            <field>[federated.1xb7j0q0if4no810413ru0iwdzuu].[Weekly_Hours_Worked _Group]</field>
+            <field>[federated.1xb7j0q0if4no810413ru0iwdzuu].[Working_Group]</field>
+            <field>[federated.1xb7j0q0if4no810413ru0iwdzuu].[none:Age Range:nk]</field>
+            <field>[federated.1xb7j0q0if4no810413ru0iwdzuu].[none:Caring for Children (bin):qk]</field>
+            <field>[federated.1xb7j0q0if4no810413ru0iwdzuu].[none:Education Level:nk]</field>
+            <field>[federated.1xb7j0q0if4no810413ru0iwdzuu].[none:Employment Status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      fR+l1FN/19izPHevl+/lc6d15/shnnYi9Vlee9cHbkzTxLLa+P5nx1WjdkjLsnEc51FlDKPz
+      Duq7tC3n0wtrn2qlTLlcxvUevSM8/Ac4dhvX++znbzXqNFrHMy0flm+32595Q472PcrlMvVm
+      62R57dNqW59SssNxHLTm2Gt/WN73HCz7s/N9fM+lUqniPTbocHTutEe7bX9GaWg3G5TLFR7/
+      Fz1+7hzv0wcztNbUDqtYzvE6PizfarVOK3asfL1WxXYefVZUSh01/s8r36mjc+xekYev3bWt
+      z6w72sdxPXzfO2o35zJyeffGB2QPqtRqNVr1Oq1Wg9WVFRoPGrVT2+fO5h61Wp319Y0T5Qu7
+      W9xc2aBRr+H7PrVajZ2tDXKFR5fGZqXAembv1Jtm7q/f4/7WLrVaDdduU280WFtdoVrvnFzf
+      bnB7ZZ3Dw9qp9b/1wZ+wX21Rq9Vp1Gq0mjVW7q3QevBPc1pFtnMVXPfkB/56aY/3//QOVquO
+      5Xbqns9m2N7dP9pnc2MdDaxtnHzte5lNbq/ep1arofWj175XKB/tc+/ObRrNBs1TGnplL8NH
+      d9ZoNuq4D85dNrPJ7v7B0T5rayvYTzSiR3VbYXOzc+48x6LeaLC+ukKl1klDOMxvs5UrUa83
+      TpTVboMfvvMebcui0bKo1WpUivus398+CrbC7iZ7xUPa1sk3Cd9p8KM/eZ+WbVNvtqjValRL
+      edbWt47dXLV65w6nvUXcX7vDZiZHrVbDd9rUGi021lYpVesPKuixsbHFwe4Wh+3OEbqeCuFZ
+      hxTrDs2tLRpDCQxDgYaJkQFKlTr9k2kiA2MMR4sUy1VOXrQ0Wzs5qg0Hb2aQ1Vwe7XsMDE9Q
+      LWaZHh8BZTA6Nko76hI1j8ew9hz29ouoWJs4LfY9jeVpFhfn2N7YI3X1Iirax3gqSf6gxPTk
+      +PH6t4qULQNv4z6p/kjnsqo1YwNRqk2HvpQJaGrVCs2xFMNP3Euyub0DzQalepPG4R4KH0f3
+      g1sEOolcTqvO3bt3qLWfvMppMrs5GpbGHY+zmtsDZTAwPEa5mGVqPN3ZLRLDdOrky1EGk4lj
+      R9jIZGkdtnDdMTJre2h8+pJpmuUCs5OdPrnnWFQqh4w98dq175LbO4Boi4Rhse/6WJ7m4uI8
+      2+t7DL+8yODoFNHiKuVqjNF06lj5zNoafXHFzsEhXr3c6dMDUe3iaogpKNXbXLly9dTuSnZ7
+      i0gUdvZK+O0aSnWutlEPXOBhB0sp40S70dolt19GR9vE3TT7KoLCY3RyilyuyEhqAIwohnYo
+      twwu98cAMN9+++23T9TkGRQLBS5evkZEO0ykEpSsKKkE7OxkiQ0ME1EGprbJl6oYZpREPNqZ
+      QbZtiMYwfBtX9XF9eZqKO0Bpb5NLlxbZ3d6i5XgM9CeJxeNo18HyFIbngPJpORCLmLRrRQYn
+      F0knTUZGR9jJV5mfGCKzk8UnRiJuEouY7Ofz+Jgk41F810EbJqZhkMsWeOWN18BpkU6aNFQ/
+      SdNldydLMj2KqRQR5VEo1hkcHADfxbYsovE4CmjZLtdfWaZSc6nmsyy+fI185j7VpkVqaJB4
+      PE7bsllcWsaz2xiGgWVZxONxtNvCiw5x5cIYbSPNfnabK0sX2M5s07JdBvuTxONxWoclKvU2
+      /UPD4HlYVrtT3ndw/CivX1ugcGhQPdhlaWmJ3M4WdcthaKCfWDyO5bgsLS3SOjzEx8X2DKIR
+      A6t2QP/4IqP9JsOjI+zkK1yYSJHZ2T06d9q1KR42iEbjRAywLItYPI5CU2lYvHr9NerlIspr
+      MjQ2R/vwgP2DCiOjaQwzymBMcXttk0g0iuv6R3UHKNeaXL9+nXq1TFQ36UvPY9eL7OcrjIyn
+      UUaUcn6Xmq0ZTETxPBfH79S9XS0yOL3AeNJkeGqKzUyehekRtrd3cImQjEeJx+MYfouaHSHV
+      Z2J7fvc/BJ+mWtxnZ6/IxeXLJGPBLzqeY7G2ts7AyCSzk6OByzcPy2xmdpm+sEx6IP75BZ5Q
+      yufIFipcvnqFmBm01+izfu8eZnKYhfnpwM/tOW3W1jcYTE8y8xSv3Xcd1tdXSQyNMT89Ebh8
+      s1Zma3uXqZcukR5MfH6BYzQ7mxs0XJPLSws8zefzna0N6o7iyqWLp/QWPpvVOGR9K8Pk7AKj
+      qf5T9/lCAkCIF5Wk74hQkwAQofb/ARDFJ298DazmAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 4' width='192'>
+      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
+      igAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 5' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
